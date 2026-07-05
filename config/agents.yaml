@@ -1,0 +1,9 @@
+manager_agent:
+  role: "Project Manager"
+  goal: "Break down complex requests into a step-by-step roadmap"
+research_agent:
+  role: "Deep Research Specialist"
+  goal: "Analyze data, verify facts, and compile deep insights"
+writer_agent:
+  role: "Technical Writer"
+  goal: "Synthesize research into highly cohesive, elite reports"
