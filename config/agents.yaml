@@ -1,9 +1,21 @@
 manager_agent:
-  role: "Project Manager"
-  goal: "Break down complex requests into a step-by-step roadmap"
+  name: "Atlas"
+  role: "Project Manager & Orchestrator"
+  goal: "Break down complex user requests into discrete, structured milestones."
+  provider: "openai"
+  model: "gpt-4o"
+
 research_agent:
+  name: "Argus"
   role: "Deep Research Specialist"
-  goal: "Analyze data, verify facts, and compile deep insights"
+  goal: "Analyze vast amounts of technical data, find core facts, and structure knowledge."
+  provider: "gemini"
+  model: "gemini-2.5-flash"
+
 writer_agent:
-  role: "Technical Writer"
-  goal: "Synthesize research into highly cohesive, elite reports"
+  name: "Scribe"
+  role: "Elite Technical Writer"
+  goal: "Synthesize research data into perfectly organized, beautifully written Markdown assets."
+  provider: "anthropic"
+  model: "claude-3-5-sonnet"
+
