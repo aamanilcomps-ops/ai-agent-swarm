@@ -9,35 +9,14 @@ class AIAgent:
     def execute(self, task_prompt: str, context: str = "") -> str:
         print(f"   [Simulation] Connecting to {self.provider.upper()} ({self.model})... Done.")
         
-        # Match responses cleanly by checking the Agent's specific name
         if self.name == "Atlas":
-            return (
-                f"### 📋 STRATEGIC EXECUTION PLAN BY {self.name.upper()} ({self.provider.upper()})\n"
-                f"1. Deconstruct core architecture requirements.\n"
-                f"2. Isolate functional sub-modules for deep research parsing.\n"
-                f"3. Map deployment vectors for local device orchestration."
-            )
+            return "Task Plan: Generate an automated math utility script."
             
         elif self.name == "Argus":
-            return (
-                f"### 🔍 DEEP RESEARCH METRICS COMPILED BY {self.name.upper()} ({self.provider.upper()})\n"
-                f"- Telemetry data indicates 100% stable execution within Termux sandbox.\n"
-                f"- Architecture validates local Python dependency paths mapping flawlessly.\n"
-                f"- Memory footprint optimized for low-overhead mobile processor compilation."
-            )
+            return "Technical Audit: Python logic validated."
             
         elif self.name == "Scribe":
-            return (
-                f"# 🧠 SWARMMIND MASTER INSIGHT REPORT\n"
-                f"Generated cleanly by the AI Agent Cluster inside your mobile terminal.\n\n"
-                f"## 🛠️ Execution Context Metrics\n"
-                f"The underlying engine has synthesized the strategic plan blueprint and raw data arrays.\n\n"
-                f"## 📋 Aggregated Pipeline Results\n"
-                f"- **Orchestration Nodes**: Fully Operational\n"
-                f"- **Data Integrity Check**: 100% Passed\n"
-                f"- **Network State**: Safely operating offline without tracking cookies or paid key constraints.\n\n"
-                f"Pipeline execution completed successfully. The project ecosystem is green across all sectors!"
-            )
+            # This is raw, pristine, executable Python code
+            return "import math\nprint('\\n===============================================')\nprint('🚀 SUCCESS: This tool was built by your AI Swarm!')\nprint('===============================================')\nradius = 5\narea = math.pi * (radius ** 2)\nprint(f'Calculated Area of a Circle (Radius {radius}): {area:.2f}')\nprint('===============================================')\n"
             
-        return f"Simulated fallback data from {self.name} responding to: {task_prompt}"
-
+        return "print('Error: Unknown Agent')"
