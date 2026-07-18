@@ -1,5 +1,6 @@
 import os
-from pydantic import BaseSettings, validator
+from pydantic_settings import BaseSettings
+from pydantic import validator
 from typing import Optional
 import logging
 
